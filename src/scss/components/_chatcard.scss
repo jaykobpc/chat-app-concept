@@ -1,0 +1,73 @@
+.chatcard {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 5px 15px 5px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    transition: all background-color 200ms ease;
+
+    &::hover {
+        background-color: $color-grey-200;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.65px;
+        background-color: $color-grey-200;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__imagebox {
+        flex: 0 0 50px;
+        margin-right: 10px;
+
+        &__img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: $color-grey-200;
+        }
+    }
+
+    &__textview {
+        flex: 1;
+        overflow: hidden;
+
+        &__title {
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 500;
+            color: #9588ac;
+        }
+
+        &__timestamp {
+            color: $color-grey-600;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &__text {
+            font-size: 13px;
+            font-family: inherit;
+            font-weight: 300;
+            color: $color-grey-600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    &__groupview {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 7px;
+    }
+}

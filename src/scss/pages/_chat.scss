@@ -1,0 +1,97 @@
+.chatview {
+    background-color: $color-primary;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__chatwidget {
+        display: flex;
+        padding: 10px 8px;
+        margin-bottom: 8px;
+    }
+
+    &__chatimagebox {
+        overflow: hidden;
+        margin-right: 5px;
+        flex: 0 0 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &__img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: $color-grey-200;
+        }
+    }
+
+    &__textwidget {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    &__textbox {
+        padding: 8px;
+        max-width: 250px;
+        border-radius: 6px;
+        overflow: hidden;
+
+        &__text {
+            font-size: 13px;
+            font-family: inherit;
+            font-weight: 300;
+            color: $color-grey-700;
+        }
+    }
+
+    &__timestamp {
+        justify-content: flex-end;
+
+        &__time {
+            font-family: inherit;
+            font-size: 10px;
+            font-weight: 500;
+            color: $color-grey-700;
+        }
+    }
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex-0 {
+    flex: unset;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.chat-sender-bg {
+    background-color: $color-chat-sender;
+}
+
+.chat-recipent-bg {
+    background-color: $color-chat-recipent;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.text-left {
+    text-align: left;
+}
