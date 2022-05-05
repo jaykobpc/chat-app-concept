@@ -1,12 +1,8 @@
 <template>
   <div class="mobile">
     <div class="device-frame no-select">
-      <router-view v-slot="{ Component, route }">
-        <transition
-          :enter-active-class="route.meta.enterClass"
-          :leave-active-class="route.meta.leaveClass"
-          mode="out-in"
-        >
+      <router-view v-slot="{ Component, route }" appear>
+        <transition :enter-active-class="route.meta.enterClass" :leave-active-class="route.meta.leaveClass">
           <component :is="Component" />
         </transition>
       </router-view>

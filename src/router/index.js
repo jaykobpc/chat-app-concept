@@ -9,8 +9,8 @@ const routes = [
     name: "HomeView",
     component: HomeView,
     meta: {
-      enterClass: "animate__animated animate__fadeInUp animate__faster",
-      leaveClass: "animate__animated animate__fadeOutBottom animate__faster",
+      enterClass: "",
+      leaveClass: "animate__animated animate__fadeOutDown animate__faster",
     },
   },
   {
@@ -19,7 +19,7 @@ const routes = [
     component: ChatView,
     meta: {
       enterClass: "animate__animated animate__fadeInUp animate__faster",
-      leaveClass: "animate__animated animate__fadeOutBottom animate__faster",
+      leaveClass: "animate__animated animate__fadeOutDown animate__faster",
     },
   },
 ];
